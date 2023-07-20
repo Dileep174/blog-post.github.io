@@ -3,98 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Document</title>
-    <style>
-        /* section-1 */
-        .bg-gray {
-            background: gainsboro;
-        }
-
-        .nevy-blue {
-            background: rgb(0 44 83);
-        } 
-
-        .text-nevy-blue {
-            color: rgb(0 44 83);
-        }
-        .btn-orange {
-          color: #ef5f00;;
-        }
-
-        .img-height {
-          height: 896px;
-          object-fit: cover;
-        }
-        .img-size {
-          height: 300px;
-          object-fit: cover;
-        }
-        .card-body {
-            flex: 1 1 auto;
-            padding: 0rem 0rem;
-        }
-
-        .bi-chevron-down::before {
-            float: right;
-            margin: 15px 0px;
-        }
-
-        /* Tabs */
-        .navbar-brand {
-          padding-left: 15px;
-          padding-right: 15px;
-          border-radius: 25px;
-        }
-        .nav-item {
-            margin: 5px;
-            background: gainsboro;
-            border-radius: 35px;
-        }
-       .nav-link {
-        color:black;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
-        cursor: pointer;
-       }
-       @media (max-width: 992px) {
-        /* section-1 */
-        .img-height {
-            height: 392px!important;
-            object-fit: cover;
-        }
-        .navbar .container {
-          background: gainsboro;
-          padding: 0px;
-        }
-        .navbar-collapse {
-          border-top: 20px solid white;
-        }
-        /* .navbar-nav {
-          background: gray;
-        } */
-        .navbar a{
-          padding: 6px 20px;
-        }
-        .navbar-toggler {
-          margin:10px;
-        }
-        .nav-fill .nav-item, .nav-fill>.nav-link {
-            flex: 1 1 auto;
-            text-align: center;
-            margin: 2px 0px;
-        }
-        .footer .row {
-          justify-content: center;
-          text-align: center;
-        }
-       }
-      
-        
-    </style>
+    
 </head>
 <body>
 
@@ -116,9 +30,9 @@
                 <div class="col-md-12 col-lg-8 pt-5">
                   <div class="card border-0">
                     <img src="img/moon_crop.jpg" class="img-height" alt="...">
-                    <div class="card-body">
+                    <div class="card-body nevy-blue">
                         <div class="dropdown">
-                            <a class="btn btn-drop nevy-blue nevy-blue rounded-0 text-start text-white p-4 fs-2 w-100" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn-drop rounded-0 text-start text-white p-4 fs-2 w-100" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 Data Security as a practice
                                 <i class="bi bi-chevron-down"></i>
                             </a>
@@ -137,9 +51,9 @@
                     <div class="col">
                         <div class="card border-0">
                           <img src="img/moon_crop.jpg" class="img-size" alt="...">
-                          <div class="card-body">
+                          <div class="card-body nevy-blue">
                             <div class="dropdown">
-                                <a class="btn btn-drop nevy-blue text-white text-start rounded-0 p-4 fs-2 w-100" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="btn btn-drop text-white text-start rounded-0 p-4 fs-2 w-100" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                     Introducing The BizCubad Method
                                     <i class="bi bi-chevron-down"></i>
                                 </a>
@@ -158,9 +72,9 @@
                     <div class="col">
                         <div class="card border-0">
                           <img src="img/moon_crop.jpg" class="img-size" alt="...">
-                          <div class="card-body">
+                          <div class="card-body  nevy-blue">
                             <div class="dropdown">
-                                <a class="btn btn-drop nevy-blue text-white text-start rounded-0 p-4 fs-2 w-100" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="btn btn-drop text-white text-start rounded-0 p-4 fs-2 w-100" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                     Data Analytics And Robotic Process Automation
                                     <i class="bi bi-chevron-down"></i>
                                 </a>
@@ -188,36 +102,58 @@
 
     <section>
       <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container mt-5 border-dark border-bottom-5 ">
-          <a class="navbar-brand bg-gray" href="#">All</a>
+        <div class="container mt-5 border-dark border-bottom-5 align-items-start">
+          <a class="navbar-brand bg-gray mt-2" href="#">All</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 nav-pills nav-fill">
+          <div class="collapse navbar-collapse flex-fill w-100" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+              <li class="nav-item bg-gray rounded-pill">
+                <a class="nav-link text-dark" href="#">All</a>
+              </li>
               <li class="nav-item bg-gray rounded-pill">
                 <a class="nav-link text-dark" href="#">Analytics</a>
               </li>
               <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Security</a>
+                <a class="nav-link text-dark" href="#">Analytics at Operational Scale
+                </a>
+              </li>
+              <li class="nav-item bg-gray rounded-pill">
+                <a class="nav-link text-dark" href="#">Analytics Products</a>
+              </li>
+              <li class="nav-item bg-gray rounded-pill">
+                <a class="nav-link text-dark" href="#">BizCubed</a>
+              </li>
+              <li class="nav-item bg-gray rounded-pill">
+                <a class="nav-link text-dark" href="#">Business Intelligence Process</a>
+              </li>
+              <li class="nav-item bg-gray rounded-pill">
+                <a class="nav-link text-dark" href="#">Case Studies</a>
+              </li>
+              <li class="nav-item bg-gray rounded-pill">
+                <a class="nav-link text-dark" href="#">Data Analyst</a>
+              </li>
+              <li class="nav-item bg-gray rounded-pill">
+                <a class="nav-link text-dark" href="#">Data Engineer</a>
               </li>
               <li class="nav-item bg-gray rounded-pill">
                 <a class="nav-link text-dark" href="#">Data Engineering</a>
               </li>
               <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Data Management </a>
+                <a class="nav-link text-dark" href="#">Data Life Cycle</a>
               </li>
               <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Data Life Cycle</a>
+                <a class="nav-link text-dark" href="#">Data Management</a>
               </li>
               <li class="nav-item bg-gray rounded-pill">
                 <a class="nav-link text-dark" href="#">Data Scientist</a>
               </li>
               <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Training</a>
+                <a class="nav-link text-dark" href="#">DeBortoli Wines</a>
               </li>
               <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">IoT</a>
+                <a class="nav-link text-dark" href="#">Fun and Interesting</a>
               </li>
             </ul>
           </div>

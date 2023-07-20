@@ -1,0 +1,93 @@
+/* section-1 */
+.bg-gray {
+    background: gainsboro;
+}
+
+.nevy-blue {
+    background: rgb(0 44 83);
+} 
+
+.text-nevy-blue {
+    color: rgb(0 44 83);
+}
+.btn-orange {
+  color: #ef5f00;;
+}
+
+.img-height {
+  height: 896px;
+  object-fit: cover;
+}
+.img-size {
+  height: 300px;
+  object-fit: cover;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 0rem 0rem;
+}
+
+.bi-chevron-down::before {
+    float: right;
+    margin: 15px 0px;
+}
+
+/* Tabs */
+.navbar-brand {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 25px;
+}
+.nav-item {
+    margin: 5px;
+    background: gainsboro;
+    border-radius: 35px;
+}
+.nav-link {
+color:black;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+cursor: pointer;
+}
+
+.collapse .navbar-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media (max-width: 992px) {
+/* section-1 */
+.img-height {
+    height: 392px!important;
+    object-fit: cover;
+}
+.navbar .container {
+  background: gainsboro;
+  padding: 0px;
+}
+.navbar-collapse {
+  border-top: 20px solid white;
+}
+.navbar a{
+  padding: 6px 20px;
+}
+.navbar-toggler {
+  margin:10px;
+}
+.nav-fill .nav-item, .nav-fill>.nav-link {
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 2px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    background: #c1c1c1;
+    border-radius: 25px;
+}
+.footer .row {
+  justify-content: center;
+  text-align: center;
+}
+}
