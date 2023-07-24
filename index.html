@@ -11,7 +11,7 @@
     
 </head>
 <body>
-
+  
     <!-- section-1 heading -->
 
     <section class="nevy-blue">
@@ -101,73 +101,43 @@
     <!-- section-3 Tabs-->
 
     <section>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container mt-5 border-dark border-bottom-5 align-items-start">
-          <a class="navbar-brand bg-gray mt-2" href="#">All</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light my-3">
+        <div class="container">
+          <a class="navbar-brand" href="#">All</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse flex-fill w-100" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">All</a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Analytics</a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Analytics at Operational Scale
-                </a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Analytics Products</a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">BizCubed</a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Business Intelligence Process</a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Case Studies</a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Data Analyst</a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Data Engineer</a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Data Engineering</a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Data Life Cycle</a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Data Management</a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Data Scientist</a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">DeBortoli Wines</a>
-              </li>
-              <li class="nav-item bg-gray rounded-pill">
-                <a class="nav-link text-dark" href="#">Fun and Interesting</a>
-              </li>
-            </ul>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div id="myBtnContainer" class="text-center">
+              <button class="btn active" onclick="filterSelection('all')">All</button>
+              <button class="btn" onclick="filterSelection('Analytics')">Analytics</button>
+              <button class="btn" onclick="filterSelection('AnalyticsOperational')">Analytics at Operational Scale</button>
+              <button class="btn" onclick="filterSelection('AnalyticsProducts')">Analytics Products</button>
+              <button class="btn" onclick="filterSelection('BizCubed')">BizCubed</button>
+              <button class="btn" onclick="filterSelection('BusinessIntelligence')">Business Intelligence Process</button>
+              <button class="btn" onclick="filterSelection('CaseStudies')">Case Studies</button>
+              <button class="btn" onclick="filterSelection('DataAnalyst')">Data Analyst</button>
+              <button class="btn" onclick="filterSelection('DataEngineer')">Data Engineer</button>
+              <button class="btn" onclick="filterSelection('DataEngineering')">Data Engineering</button>
+              <button class="btn" onclick="filterSelection('DataLifeCycle')">Data Life Cycle</button>
+              <button class="btn" onclick="filterSelection('fruitsDataManagement')">Data Management</button>
+              <button class="btn" onclick="filterSelection('DataScientist')">Data Scientist</button>
+              <button class="btn" onclick="filterSelection('DataScientist')">DeBortoli Wines</button>
+              <button class="btn" onclick="filterSelection('FunandInteresting')">Fun and Interesting</button>
+            </div>
           </div>
         </div>
       </nav>
     </section>
 
+    
     <!-- section-4 cards -->
 
     <section>
       <div class="container">
         <div class="row">
-          <!--ADD CLASSES HERE d-flex align-items-stretch-->
-          <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+
+          <div class="col-lg-4 mb-3 filterDiv All">
             <div class="card border-0 pt-3">
               <img src="https://i.postimg.cc/28PqLLQC/dotonburi-canal-osaka-japan-700.jpg" class="" alt="Card Image">
               <div class="card-body p-4 d-flex flex-column">
@@ -180,8 +150,8 @@
               </div>
             </div>
           </div>
-          <!--ADD CLASSES HERE d-flex align-items-stretch-->
-          <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          
+          <div class="col-lg-4 mb-3 filterDiv Analytics">
             <div class="card border-0 pt-3">
               <img src="https://i.postimg.cc/4xVY64PV/porto-timoni-double-beach-corfu-greece-700.jpg" class=""s alt="Card Image">
               <div class="card-body p-4 d-flex flex-column">
@@ -197,8 +167,8 @@
               </div>
             </div>
           </div>
-          <!--ADD CLASSES HERE d-flex align-items-stretch-->
-          <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+
+          <div class="col-lg-4 mb-3 filterDiv AnalyticsOperational">
             <div class="card border-0 pt-3">
               <img src="https://i.postimg.cc/TYyLPJWk/tritons-fountain-valletta-malta-700.jpg" class="" alt="Card Image">
               <div class="card-body p-4 d-flex flex-column">
@@ -215,11 +185,8 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="row">
-          <!--ADD CLASSES HERE d-flex align-items-stretch-->
-          <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          <div class="col-lg-4 mb-3 filterDiv AnalyticsProducts">
             <div class="card border-0 pt-3">
               <img src="https://i.postimg.cc/28PqLLQC/dotonburi-canal-osaka-japan-700.jpg" class="" alt="Card Image">
               <div class="card-body p-4 d-flex flex-column">
@@ -234,8 +201,8 @@
               </div>
             </div>
           </div>
-          <!--ADD CLASSES HERE d-flex align-items-stretch-->
-          <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          
+          <div class="col-lg-4 mb-3 filterDiv BizCubed">
             <div class="card border-0 pt-3">
               <img src="https://i.postimg.cc/4xVY64PV/porto-timoni-double-beach-corfu-greece-700.jpg" class="" alt="Card Image">
               <div class="card-body p-4 d-flex flex-column">
@@ -247,8 +214,8 @@
               </div>
             </div>
           </div>
-          <!--ADD CLASSES HERE d-flex align-items-stretch-->
-          <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          
+          <div class="col-lg-4 mb-3 filterDiv BusinessIntelligence">
             <div class="card border-0 pt-3">
               <img src="https://i.postimg.cc/TYyLPJWk/tritons-fountain-valletta-malta-700.jpg" class="" alt="Card Image">
               <div class="card-body p-4 d-flex flex-column">
@@ -264,11 +231,8 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="row">
-          <!--ADD CLASSES HERE d-flex align-items-stretch-->
-          <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          <div class="col-lg-4 mb-3 filterDiv CaseStudies">
             <div class="card border-0 pt-3">
               <img src="https://i.postimg.cc/28PqLLQC/dotonburi-canal-osaka-japan-700.jpg" class="" alt="Card Image">
               <div class="card-body p-4 d-flex flex-column">
@@ -283,8 +247,8 @@
               </div>
             </div>
           </div>
-          <!--ADD CLASSES HERE d-flex align-items-stretch-->
-          <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+
+          <div class="col-lg-4 mb-3 filterDiv DataAnalyst">
             <div class="card border-0 pt-3">
               <img src="https://i.postimg.cc/4xVY64PV/porto-timoni-double-beach-corfu-greece-700.jpg" class="" alt="Card Image">
               <div class="card-body p-4 d-flex flex-column">
@@ -299,8 +263,8 @@
               </div>
             </div>
           </div>
-          <!--ADD CLASSES HERE d-flex align-items-stretch-->
-          <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          
+          <div class="col-lg-4 mb-3 filterDiv DataEngineer">
             <div class="card border-0 pt-3">
               <img src="https://i.postimg.cc/TYyLPJWk/tritons-fountain-valletta-malta-700.jpg" class="" alt="Card Image">
               <div class="card-body p-4 d-flex flex-column">
@@ -315,6 +279,102 @@
               </div>
             </div>
           </div>
+
+
+          <div class="col-lg-4 mb-3 filterDiv DataEngineering">
+            <div class="card border-0 pt-3">
+              <img src="https://i.postimg.cc/4xVY64PV/porto-timoni-double-beach-corfu-greece-700.jpg" class="" alt="Card Image">
+              <div class="card-body p-4 d-flex flex-column">
+                <h2 class="card-title text-nevy-blue">BizCubed Announces ISO27001 Certification</h2><hr>
+                <p class="card-text">BizCubed is pleased to announce formal certification of its 
+                  Information Security Management System.</p>
+                <a href="#" class="btn btn-orange align-self-start fw-bold mb-4">READ MORE<i class="bi bi-chevron-right"></i></a>
+                <p class="card-text"><small class="text-muted fst-italic">by Rebecca Zeus | Jun 30, 2022</small></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 mb-3 filterDiv DataLifeCycle">
+            <div class="card border-0 pt-3">
+              <img src="https://i.postimg.cc/TYyLPJWk/tritons-fountain-valletta-malta-700.jpg" class="" alt="Card Image">
+              <div class="card-body p-4 d-flex flex-column">
+                <h2 class="card-title text-nevy-blue">Building a New Habit is HARD!</h2><hr>
+                <p class="card-text">“Building business logic is a low priority, from my 
+                  perspective.” This was what my CEO said to me as I 
+                  shared with him my priorities for the week. The funny 
+                  part? I work for a data engineering firm and 
+                  operationalising the development of business logic is 
+                  literally...</p>
+                <a href="#" class="btn btn-orange align-self-start fw-bold mb-4">READ MORE<i class="bi bi-chevron-right"></i></a>
+                <p class="card-text"><small class="text-muted fst-italic">by Maxx Silver | Feb 28, 2022</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-3 filterDiv fruitsDataManagement">
+            <div class="card border-0 pt-3">
+              <img src="https://i.postimg.cc/28PqLLQC/dotonburi-canal-osaka-japan-700.jpg" class="" alt="Card Image">
+              <div class="card-body p-4 d-flex flex-column">
+                <h2 class="card-title text-nevy-blue">DataOps: Build it’ or Buy it’?</h2><hr>
+                <p class="card-text">“When you need capability that you don’t have, there 
+                  are two options: you can build it yourself, or you can 
+                  partner to get it.” This was a comment made by a 
+                  Senior IT Leader in a meeting of his organisation’s 
+                  executives with BizCubed CEO, Zachary Zeus. We’ve...</p>
+                <a href="#" class="btn btn-orange align-self-start fw-bold mb-4">READ MORE<i class="bi bi-chevron-right"></i></a>
+                <p class="card-text"><small class="text-muted fst-italic">by Maxx Silver | Feb 15, 2022</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-3 filterDiv DataScientist">
+            <div class="card border-0 pt-3">
+              <img src="https://i.postimg.cc/4xVY64PV/porto-timoni-double-beach-corfu-greece-700.jpg" class="" alt="Card Image">
+              <div class="card-body p-4 d-flex flex-column">
+                <h2 class="card-title text-nevy-blue">DataOps: Build it’ or Buy it’?</h2><hr>
+                <p class="card-text">When we think of data engineering and data science, it 
+                  can often be difficult to distinguish between the two. 
+                  Especially for people without a technical background it 
+                  can often seem like a very vague and abstract concept We 
+                  all know data is important, but how do we...</p>
+                <a href="#" class="btn btn-orange align-self-start fw-bold mb-4">READ MORE<i class="bi bi-chevron-right"></i></a>
+                <p class="card-text"><small class="text-muted fst-italic">by BizCubist | Jul 30, 2021</small></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 mb-3 filterDiv DataScientist">
+            <div class="card border-0 pt-3">
+              <img src="https://i.postimg.cc/TYyLPJWk/tritons-fountain-valletta-malta-700.jpg" class="" alt="Card Image">
+              <div class="card-body p-4 d-flex flex-column">
+                <h2 class="card-title text-nevy-blue">Data Engineering and Infrastructure</h2><hr>
+                <p class="card-text">This week we continue our exploration of The BizCubed 
+                  Method and the Data Maturity Model. See this post for an 
+                  overview of the model and this post for a deep dive on 
+                  Security. This week we tackle the relationship between 
+                  Data Engineering and Infrastructure. ---...</p>
+                <a href="#" class="btn btn-orange align-self-start fw-bold mb-4">READ MORE<i class="bi bi-chevron-right"></i></a>
+                <p class="card-text"><small class="text-muted fst-italic">by Maxx Silver | Feb 25, 2021</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-3 filterDiv DataScientist FunandInteresting">
+            <div class="card border-0 pt-3">
+              <img src="https://i.postimg.cc/TYyLPJWk/tritons-fountain-valletta-malta-700.jpg" class="" alt="Card Image">
+              <div class="card-body p-4 d-flex flex-column">
+                <h2 class="card-title text-nevy-blue">Data Engineering and Infrastructure</h2><hr>
+                <p class="card-text">This week we continue our exploration of The BizCubed 
+                  Method and the Data Maturity Model. See this post for an 
+                  overview of the model and this post for a deep dive on 
+                  Security. This week we tackle the relationship between 
+                  Data Engineering and Infrastructure. ---...</p>
+                <a href="#" class="btn btn-orange align-self-start fw-bold mb-4">READ MORE<i class="bi bi-chevron-right"></i></a>
+                <p class="card-text"><small class="text-muted fst-italic">by Maxx Silver | Feb 25, 2021</small></p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -325,7 +385,7 @@
 
     <section>
       <div class="container text-center my-5">
-        <a href="btn" class="h6 text-secondary text-decoration-none p-2 bg-gray w-25">LOAD MORE POSTS</a>
+        <a href="#" class="h6 text-secondary text-decoration-none p-2 bg-gray w-25">LOAD MORE POSTS</a>
       </div>
     </section>
     
@@ -352,6 +412,6 @@
       </div>
     </section>
 
-    
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@
 }
 
 .img-height {
-  height: 896px;
+  height: 928px;
   object-fit: cover;
 }
 .img-size {
@@ -37,24 +37,53 @@
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 25px;
+  display: none;
 }
-.nav-item {
-    margin: 5px;
-    background: gainsboro;
-    border-radius: 35px;
+.filterDiv {
+  display: none;
 }
-.nav-link {
-color:black;
-text-align: center;
-text-decoration: none;
-font-size: 16px;
-cursor: pointer;
+
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+#myBtnContainer .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 5px 0px;
+}
+
+#myBtnContainer .btn:hover {
+  background-color: #ddd;
+}
+
+#myBtnContainer .btn.active {
+  background-color: #666;
+  color: white;
+  border: none;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: none;
 }
 
 .collapse .navbar-nav {
     flex-wrap: wrap;
     justify-content: center;
 }
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* Load more */
+
 
 
 @media (max-width: 992px) {
@@ -62,6 +91,13 @@ cursor: pointer;
 .img-height {
     height: 392px!important;
     object-fit: cover;
+}
+
+.navbar-brand {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 25px;
+  display: flex;
 }
 .navbar .container {
   background: gainsboro;
@@ -85,6 +121,18 @@ cursor: pointer;
 .navbar-light .navbar-nav .nav-link {
     background: #c1c1c1;
     border-radius: 25px;
+}
+
+#myBtnContainer .btn {
+  border: none;
+  outline: none;
+  padding: 4px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 .footer .row {
   justify-content: center;
