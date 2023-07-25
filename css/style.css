@@ -42,7 +42,9 @@
 .filterDiv {
   display: none;
 }
-
+.filterDiv a {
+  color: #ef5f00;
+}
 .show {
   display: block;
 }
@@ -83,8 +85,18 @@
 }
 
 /* Load more */
+.box-container a {
+  color: #ef5f00;
+}
+.box-container .box{ 
+  display: none;
+}
 
-
+.box-container .box:nth-child(1),
+.box-container .box:nth-child(2),
+.box-container .box:nth-child(3){
+  display: inline-block;
+}
 
 @media (max-width: 992px) {
 /* section-1 */
