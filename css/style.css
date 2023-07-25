@@ -92,9 +92,9 @@
   display: none;
 }
 
-.box-container .box:nth-child(1),
-.box-container .box:nth-child(2),
-.box-container .box:nth-child(3){
+.box-container .box:nth-child(0),
+.box-container .box:nth-child(0),
+.box-container .box:nth-child(0){
   display: inline-block;
 }
 
