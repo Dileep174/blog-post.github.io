@@ -1,4 +1,9 @@
 /* section-1 */
+body .container {
+      transition:all 2.45s ease;
+
+}
+
 .bg-gray {
     background: gainsboro;
 }
@@ -92,9 +97,7 @@
   display: none;
 }
 
-.box-container .box:nth-child(1),
-.box-container .box:nth-child(2),
-.box-container .box:nth-child(3){
+.box-container .box:nth-child(0){
   display: inline-block;
 }
 
